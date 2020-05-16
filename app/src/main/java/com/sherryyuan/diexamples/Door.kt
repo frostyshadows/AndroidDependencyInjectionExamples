@@ -2,6 +2,8 @@ package com.sherryyuan.diexamples
 
 import android.util.Log
 
+private const val TAG = "DoorImpl"
+
 interface Door {
     fun open()
 }
@@ -9,6 +11,6 @@ interface Door {
 class DoorImpl : Door {
 
     override fun open() {
-        Log.println(Log.VERBOSE, null, "Opening door")
+        Log.d(TAG, "Opening door")
     }
 }
